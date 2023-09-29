@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color:black;
+}
+
+
+.card {
+    max-width: 26rem;
+    width: 89%;
+    background-color: rgb(136, 221, 136);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 3rem;
+    height: 35rem;
+    margin-left: 28rem;
+    position: relative;
+  
+}
+
+.card .search {
+    width: 85%;
+    position:absolute;
+    top:8%;
+    left:8%;
+    font-weight: bold;
+    color: rgb(88, 88, 88);
+}
+.card .search input{
+    height:2.1rem;
+    width:10.5rem;
+    padding-top: 0.25rem;
+    padding-bottom:0.25rem;
+    padding-left:0.5rem;
+    text-align: start;
+    justify-content: center;
+    border:0.1rem solid black;
+    border-radius: 2.1rem;
+    font-weight:bold;
+    
+
+}
+
+.card .search button {
+    padding:0.3rem;
+    border:0.1rem solid black;
+    border-radius: 0.4rem;
+    margin-left:0.4rem;
+    
+}
+
+.card .weather .weather-icon{
+    height: 15rem;
+  width: 15rem;
+  position: absolute;
+  top: 4rem;
+  left: 11rem;
+}
+.card .weather h1,h2{
+    margin-top: -5rem;
+  margin-left: 3rem;
+}
+.card .details{
+    width: 75%;
+    display: flex;
+    font-weight: bolder;
+    max-height: 10rem;
+    justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    left: 9%;
+}
+.card .details .humidity i{
+   font-size: 3rem;
+   height:4rem;
+}
+.card .details .wind i{
+    font-size: 3rem;
+    height:4rem;
+ }
