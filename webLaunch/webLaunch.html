@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="webLaunch.css">
+   
+</head>
+<body>
+    <script>
+
+let countDownDate = new Date("Oct 11, 2023 00:00:00").getTime();
+let x = setInterval(() => {
+  let now = new Date().getTime();
+  let distance = countDownDate - now;
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.querySelector(".Days").innerHTML = days;
+  document.querySelector(".Hours").innerHTML = hours;
+  document.querySelector(".Minutes").innerHTML = minutes;
+  document.querySelector(".Seconds").innerHTML = seconds;
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.querySelector(".Days").innerHTML = "00";
+    document.querySelector(".Hours").innerHTML = "00";
+    document.querySelector(".Minutes").innerHTML = "00";
+    document.querySelector(".Seconds").innerHTML = "00";
+  }
+}, 1000);
+    </script>
+    <div class="container">
+        <img src="bird.png" height="60rem" width="60rem">
+        <div class="content">
+            <h4>Website is Under Maintenance</h4>
+            <h1>We're <span class="colour">Launching</span> Soon </h1>
+            <div class="launch-time">
+            <div >
+                <p class="Days">00</p>
+                <span>Days</span>
+            </div>
+            <div >
+                <p class="Hours">00</p>
+                <span>Hours</span>
+            </div>
+            <div >
+                <p class="Minutes">00</p>
+                <span>Minutes</span>
+            </div>
+            <div >
+                <p class="Seconds">00</p>
+                <span>Seconds</span>
+            </div>
+
+            </div>
+            <button type="button" class="btn">Learn More <i class="fa-solid fa-play"></i> </button>
+        </div>
+        <img src="rocket.png" alt="rocket" class="rocket">
+    </div>
+  
+</body>
+</html>

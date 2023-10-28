@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-color: rgb(237, 246, 144);
+}
+.container{
+    max-width: 100%;
+   height:70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    position: relative; 
+}
+.container .text1{
+    padding:1.5rem;
+    transform: translateY(-10%);
+    color:rgba(247, 25, 25, 0.895);
+}
+.container .text1 u{
+   color:black;
+   text-decoration-color: red ;
+   font-size: larger;
+}
+.container .area textarea{
+    width:28%;
+    height:22vh;
+    overflow: hidden;
+    border:1px solid black;
+    border-radius: 0.4rem;
+    background: transparent;
+    font-weight: bolder;
+    padding:0.3rem;
+    resize:none;
+}
+.container .third{
+    padding:1.5rem;
+    display: flex;
+    justify-content: center;
+    gap:1.5rem;
+}
+.container .third select{
+    max-width:20%;
+    flex:1;
+    cursor:pointer;
+    outline:0;
+    border:0.15rem solid rgb(43, 42, 42);
+    border-radius: 0.4rem;
+    appearance: none;
+    background-color: transparent;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPMbUx4wmm0Lv7lKVs68YXC5oS_S1B-5bUfrOCQksBI3lP56pweWbzAYwssJF_-52qju4&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: calc(100% - 5px) ;
+    background-position-y:5.5px;
+}
+
+.container .third .btn{
+   width:6rem;
+   padding:0.21rem;
+   cursor:pointer;
+ outline:0;
+ border:0.15rem solid rgb(36, 36, 36);
+ border-radius: 0.4rem;
+ background-color: red;
+ color:white;
+}
+
+
+
