@@ -1,0 +1,94 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    background-color: rgb(249, 169, 112);
+}
+.container{
+    max-width:100%;
+    width: 50vh;
+    max-height: 90%;
+    min-height:23vh;
+    position:absolute;
+    top:20%;
+    left:35%;
+    background-color: white;
+    font-weight: bolder;
+    padding-top: 1.2rem;
+    padding:1.2rem 1.3rem 1.3rem 1.3rem;
+    border-radius: 0.7rem;
+}
+.container h1 i{
+    font-size: 1.4rem;
+}
+.form{
+    display:flex;
+    text-align: center;
+    margin-top:1rem;
+}
+.container .form .list{
+    width:80%;
+    height:2rem;
+    padding:1rem;
+    border-radius:2rem;
+    outline:none;
+    border:none;
+    background-color: rgb(230, 226, 226);
+}
+.container .form .btn{
+    width:25%;
+    height:2rem;
+    background-color: rgb(209, 80, 32);
+    border: none;
+    outline:none;
+    border-radius: 2rem;
+    font-weight: 500;
+    color:white;
+    font-size: medium;
+    margin-left:-2rem;
+}
+
+.container .listContainer li{
+   list-style:none;
+   padding-top: 1.2rem;
+   padding-left: 1.4rem;
+   font-size:1.3rem;
+   cursor:pointer;
+   user-select: none;
+}
+.container .listContainer li::before{
+    content:'';
+    height:1.2rem;
+    width:1.2rem;
+    background-image:url(https://icons.veryicon.com/png/o/miscellaneous/wens/uncheck.png);
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    left:1rem;
+}
+.container .listContainer .checked{
+    font-weight:gray;
+    text-decoration: line-through;
+}
+.container .listContainer .checked::before{
+    
+    background-image:url(https://illustoon.com/photo/7502.png);
+    
+}
+.container .listContainer li span {
+   position: absolute;
+   left:15.5rem;
+   right:inherit;
+   font-weight: 700;
+   color:red;
+   width:1.5rem;
+   text-align: center;
+   border-radius:50%;
+}
+.container .listContainer li span:hover{
+    background-color: rgb(222, 209, 209);
+   
+}
+
