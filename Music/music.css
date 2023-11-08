@@ -1,0 +1,149 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(221, 238, 241);
+}
+.container{
+    max-width:100%;
+    max-height:100%;
+    width:43vh;
+    height:60vh;
+    position: absolute;
+    top:22%;
+    left:40%;
+    background-color: rgb(240, 173, 185);
+    border-radius: 1.5rem;
+}
+.container .topmost{
+    width:85%;
+    display:flex;
+    justify-content: space-between;
+    position:absolute;
+    left:5%;
+    top:6%;
+}
+.container .topmost .angelLeft{
+    height:1.8rem;
+    width:1.8rem;
+    text-align: center;
+    border-radius: 50%;; 
+  background-color: white;
+ 
+}
+.container .topmost .angelLeft i{
+    text-align: center;
+    font-weight: 700;
+    color:rgb(255, 52, 85);
+    position:absolute;
+    top:0.36rem;
+    left:0.5rem;
+}
+
+.container .topmost .Menu{
+    height:1.8rem;
+    width:1.8rem;
+    text-align: center;
+    border-radius: 50%;; 
+  background-color: white;
+}
+.container .topmost .Menu i{
+    font-weight: 700;
+    color:rgb(255, 52, 85);
+    position:absolute;
+    top:0.32rem;
+    right:0.5rem;
+}  
+.container .singer{
+    width:55%;
+    height:40%;
+    position: absolute;
+    top:20%;
+    left:22%;
+    border-radius: 50%;
+    border:4px solid white;
+}
+.container .name{
+    position: absolute;
+    top:60%;
+    left: 29%;
+    font-weight: bolder;
+}
+.container .music{
+    position:absolute;
+    top:70%;
+    left:10%;
+    width: 80%;
+}
+.container .controller{
+    position:absolute;
+    top:80%;
+    left:7%;
+    width: 83%;
+   -webkit-appearance: none; 
+   border-radius: 2rem;
+   height:0.5rem;
+   background-color: rgb(255, 83, 112);
+   cursor:pointer;
+}
+
+.container .controller::-webkit-slider-thumb{
+    -webkit-appearance: none; 
+    background-color: rgb(255, 83, 112);
+    height:30px;
+    width:30px;
+    border: 1.6rem solid white ;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(75, 74, 74, 0.22);
+}
+.container .controls{
+    display:flex;
+    justify-content: space-around;
+    position:absolute;
+    top:85%;
+    left:3%;
+    width:90%;    
+}
+.container .controls .backward{
+    height:1.8rem;
+    width:1.8rem;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;; 
+  background-color: white;
+  padding:0.45rem;
+  box-shadow: 5px 5px 5px rgba(75, 74, 74, 0.22);
+  cursor:pointer;
+}
+.container .controls .forward{
+    height:1.8rem;
+    width:1.8rem;
+    display:inline-flex;
+   align-items: center;
+   justify-content: center;
+    border-radius: 50%;; 
+  background-color: white;
+  padding:0.45rem;
+  box-shadow: 5px 5px 5px rgba(75, 74, 74, 0.22);
+  cursor:pointer;
+}
+.container .controls .play{
+    height:1.8rem;
+    width:1.8rem;
+    display:inline-flex;
+   align-items: center;
+   justify-content: center;
+    border-radius: 50%;; 
+  background-color: white;
+  padding:0.45rem;
+  box-shadow: 5px 5px 5px rgba(75, 74, 74, 0.22);
+  cursor:pointer;
+}
+.container .controls div:nth-child(2){
+    transform: scale(1.5);
+    background-color: rgb(251, 59, 91);
+    color:white;
+}

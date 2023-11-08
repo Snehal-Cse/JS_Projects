@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="music.js"defer></script>
+</head>
+<body>
+    <div class ="container">
+       <div class="topmost">
+     <span class="angelLeft"><i class="fa-solid fa-angle-left"></i></span>
+     <span class="Menu"><i class="fa-solid fa-bars"></i></span>
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGs-_0a25hhqrzZ6kMzCkX-ANfIdOSW5hKh9SzhDgmgP3thF0MKhmhdzg_n7lMlRG0ibE&usqp=CAU" alt="image" class="singer"/>
+    <h1 class="name">Heeriye</h1>
+    <audio  class="music" >
+        <source src="song.mp3" type="audio/mpeg" >
+    </audio>
+    <input type="range" value="0" class="controller"/>
+    <div class="controls">
+        <div class="backward" ><i class="fa-solid fa-backward"></i></div>
+        <div class="play"><i class="fa-solid fa-play" class="ctrlIcon"></i></div>
+        <div  class="forward"><i class="fa-solid fa-forward"></i></div>
+    </div>
+    </div>
+</body>
+</html>
